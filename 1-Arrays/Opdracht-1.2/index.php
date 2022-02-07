@@ -6,9 +6,9 @@
 $persoon["voornaam"]   = "Kris";
 $persoon["achternaam"] = "Delver";
 $persoon["leeftijd"]   = 17;
-$persoon["klas"]  = "1C";
+$persoon["school"]  = "het ROC van Amsterdam aan de opleiding Software Ontwikkeling.";
 
-echo $persoon['voornaam']. " " . $persoon['achternaam']. " is " .  $persoon['leeftijd']. " jaar oud" .  " en ik zit in klas " . $persoon['klas'] ;
+echo $persoon['voornaam']. " " . $persoon['achternaam']. " is " .  $persoon['leeftijd']. " jaar oud" .  " en is student aan " . $persoon['school'] ;
 
 ?>
 
