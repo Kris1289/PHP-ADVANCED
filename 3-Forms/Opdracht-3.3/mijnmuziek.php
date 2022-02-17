@@ -10,7 +10,7 @@
 art=Quadeca&
 title=FMTY&
 jaar=2021&
-muzieks=Rap">Klik hier voor meer informatie!</a>
+muzieks=Rap">Klik hier voor meer informatie</a>
 </button>
 
 </body>
