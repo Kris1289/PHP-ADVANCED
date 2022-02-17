@@ -7,10 +7,10 @@
 
 <button>
 <a href="mijngegevens.php?
-art=Lil Tjay&
-title=F.N&
-jaar=2019&
-muzieks=Hip Hop">Klik hier voor meer informatie!</a>
+art=Quadeca&
+title=FMTY&
+jaar=2021&
+muzieks=Rap">Klik hier voor meer informatie!</a>
 </button>
 
 </body>
