@@ -9,10 +9,10 @@
 <center>
 
 <?php 
-echo"Tekst kleur is: " .$_POST['textColor'];
+echo"Tekstkleur is: " .$_POST['textColor'];
 echo"<br/>";
 echo"<br/>";
-echo"Achtergrond kleur is: " .$_POST['backColor'];
+echo"Achtergrondkleur is: " .$_POST['backColor'];
 ?>
 
 <style>
@@ -33,14 +33,14 @@ echo"Achtergrond kleur is: " .$_POST['backColor'];
   <?php
   echo "<table>";
     $informatie = array(
-        "Key"           =>      "Value",
-        "Naam"          =>      "Kris",
-        "Leeftijd"      =>      "17",
-        "Klas"          =>      "1c",
-        "Muziek"        =>      "Indie of Rap",
-        "Merk fiets"    =>      "Gazelle",
-        "Woonplaats"    =>      "Heerhugowaard",
-        "Eten"          =>      "Spinazie"
+        "Key:"           =>      "Value",
+        "Naam:"          =>      "Kris",
+        "Leeftijd:"      =>      "17",
+        "Klas:"          =>      "1c",
+        "Muziek:"        =>      "Indie of Rap",
+        "Merk fiets:"    =>      "Gazelle",
+        "Woonplaats:"    =>      "Heerhugowaard",
+        "Eten:"          =>      "Spinazie"
     );
 
     function maakRij($keys, $value){

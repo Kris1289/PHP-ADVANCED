@@ -9,7 +9,7 @@
 <center>
 
 <form name="invoer" action="advanced-2(deel 2).php" method="post">
-        <label for="textColor">Tekst Kleur</label>
+        <label for="textColor">Tekstkleur</label>
         <select name="textColor">
 
             <option>Select color...</option>
@@ -23,7 +23,7 @@
         <br/>
         <br/>
 
-        <label for="backColor">Achtergrond Kleur</label>
+        <label for="backColor">Achtergrondkleur</label>
         <select name="backColor">
             <br/>
             <br/>

@@ -1,50 +1,54 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eindopdracht PHP 1 Kris Delver</title>
+    <title>Document</title>
 </head>
 <body>
 <center>
-<form name="invoer" action="advanced-2.php" method="post">
-        <label for="textColor">Tekst Kleur</label>
-        <select name="textColor">
-            <option>Select color...</option>
 
-            <br/>
-            <option style="color: red;">Red</option>
-            <option style="color: blue;">Blue</option>
-            <option style="color: green;">Green</option>
-            <option style="color: black;">Black</option>
-            <option style="color: brown;">Brown</option>
-        </select>
-        <br/>
-        <br/>
+    <form name="invoer" action="advanced-2.php" method="post">
 
-        <label for="backColor">Achtergrond Kleur</label>
-        <select name="backColor">
+<p>Text kleur: </p>
+<select name="color">
+<?php
+    echo "<ul>";
 
-            <br/>
-            <br/>
-            
-            <option>Select color...</option>
-            <br/>
-            <option style="color: red;">Red</option>
-            <option style="color: blue;">Blue</option>
-            <option style="color: green;">Green</option>
-            <option style="color: black;">Black</option>
-            <option style="color: brown;">Brown</option>
-        
-        </select>
-        <br/>
-        <br/>
+   $kleuren = array( "red", "blue", "green", "black", "brown");
+   foreach ($kleuren as $kleurenlijst) {
+      echo "<option><li>" . $kleurenlijst . "</li></option>";
+    }
 
-        <label for="tabelRand">Tabelranddikte (px):</label>
-        <input type="text" name="tabelRand"><br/><br/>
-        <label for="celPad">Cell-padding (px):</label>
-        <input type="text" name="celPad"><br/><br/>
-        <input type="submit" name="submit" value="Verzenden">
+   echo "</ul>";
+ ?>
+</select>
+
+<p>Achtergrond kleur: </p>
+<select name="color2">
+<?php
+ echo "<ul>";
+
+ $kleuren2 = array("red", "blue", "green", "black", "brown");
+   foreach ($kleuren2 as $kleurenlijst2) {
+      echo "<option><li>" . $kleurenlijst2 . "</li></option>";
+   }
+
+   echo "</ul>";
+ ?>
+</select>
+
+<p>Tabelranddikte: </p>
+<input type="text" name="tabelrand" style=text-align:center>
+
+<p>Cel-padding: </p>
+<input type="text" name="padding" style=text-align:center>
+
+<br><br>
+
+<input type="submit" name="submit" value="Verzenden">
+
 </form>
 </center>
 </body>
