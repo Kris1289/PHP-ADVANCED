@@ -13,24 +13,26 @@
 <?php
 echo "<table style=border-spacing:" . $_POST['tabelrand'] . "px>";
 
-$gegevens = array(
-    "naam:" => "Kris<br>",
-    "leeftijd:" => "17<br>",
-    "woonplaats:" => "Heerhugowaard<br>",
-    "muzieksmaak:" => "Indie<br>",
-    "sport:" => "Fitness<br>"
+$info = array(
+    "Naam" => "Kris<br>",
+    "Leeftijd" => "17 <br>",
+    "Woonplaats" => "Heerhugowaard<br>",
+    "Hobby" => "Gamen<br>",
+    "Muziek Genre" => "Indie en Pop<br>",
+    "Favoriete Artiest" => "The Weeknd<br>"
 );
 
-foreach ($gegevens as $keys => $value) {
+foreach ($info as $keys => $value) {
     echo "<body style=background-color:" . $_POST['color2'] . ">
     <tr>
-    <td style=padding:" . $_POST['padding'] . "px> <p style=color:" . $_POST['color'] . ">" . $keys . "</p> </td>
-    <td style=padding:" . $_POST['padding'] . "px> <p style=color:" . $_POST['color'] . ">" . $value . "</p> </td>
+    <th style=padding:" . $_POST['padding'] . "px> <p style=color:" . $_POST['color'] . ">" . $keys . "</p> </th>
+    <th style=padding:" . $_POST['padding'] . "px> <p style=color:" . $_POST['color'] . ">" . $value . "</p> </th>
     </tr>";
 }
 
 echo "</table>";
 ?>
+
 
 </center>
 

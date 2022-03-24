@@ -33,17 +33,15 @@ echo"Achtergrondkleur is: " .$_POST['backColor'];
   <?php
   echo "<table>";
     $informatie = array(
-        "Key:"           =>      "Value",
-        "Naam:"          =>      "Kris",
-        "Leeftijd:"      =>      "17",
-        "Klas:"          =>      "1c",
-        "Muziek:"        =>      "Indie of Rap",
-        "Merk fiets:"    =>      "Gazelle",
-        "Woonplaats:"    =>      "Heerhugowaard",
-        "Eten:"          =>      "Spinazie"
+        "Naam" => "Kris<br>",
+        "Leeftijd" => "17 <br>",
+        "Woonplaats" => "Heerhugowaard<br>",
+        "Hobby" => "Gamen<br>",
+        "Muziek Genre" => "Indie en Pop<br>",
+        "Favoriete Artiest" => "The Weeknd<br>"
     );
 
-    function maakRij($keys, $value){
+    function makerow($keys, $value){
         echo"<tr>";
         echo"<td>";
         echo"$keys";
@@ -55,22 +53,12 @@ echo"Achtergrondkleur is: " .$_POST['backColor'];
     
     }
     foreach ($informatie as $keys => $value) {
-        maakRij($keys, $value);
+        makerow($keys, $value);
     }
 
     echo"</table>";
     
-  /*
-    foreach($informatie as $keys => $value){
-        echo"<tr>";
-        echo"<td>";
-        echo"$keys";
-        echo"</td>";
-        echo"<td>";
-        echo"$value";
-        echo"</td>";
-        echo"</tr>";
-    }*/
+
     ?>
 </table>
 

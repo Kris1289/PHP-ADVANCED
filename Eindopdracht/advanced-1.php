@@ -8,16 +8,27 @@
 </head>
 <body>
 <center>
+    <h3 style=text-align:center>Kris Eindopdracht</h3>
 
-    <form name="invoer" action="advanced-2.php" method="post">
+
+<form name="invoer" action="advanced-2.php" method="post">
+
+
 
 <p>Text kleur: </p>
 <select name="color">
-<?php
-    echo "<ul>";
+   <?php
+     echo "<ul>";
 
-   $kleuren = array( "red", "blue", "green", "black", "brown");
-   foreach ($kleuren as $kleurenlijst) {
+      $kleuren = array( 
+      "red",
+      "blue",
+      "green", 
+      "black", 
+      "brown");
+
+
+      foreach ($kleuren as $kleurenlijst) {
       echo "<option><li>" . $kleurenlijst . "</li></option>";
     }
 
@@ -25,13 +36,22 @@
  ?>
 </select>
 
+
+
 <p>Achtergrond kleur: </p>
 <select name="color2">
-<?php
- echo "<ul>";
+   <?php
+   echo "<ul>";
 
- $kleuren2 = array("red", "blue", "green", "black", "brown");
-   foreach ($kleuren2 as $kleurenlijst2) {
+      $kleuren2 = array(
+      "red", 
+      "blue", 
+      "green", 
+      "black", 
+      "brown");
+
+
+      foreach ($kleuren2 as $kleurenlijst2) {
       echo "<option><li>" . $kleurenlijst2 . "</li></option>";
    }
 
@@ -39,13 +59,16 @@
  ?>
 </select>
 
-<p>Tabelranddikte: </p>
+
+
+<p>Tabelranddikte (px): </p>
 <input type="text" name="tabelrand" style=text-align:center>
 
-<p>Cel-padding: </p>
+<p>Cel-padding (px): </p>
 <input type="text" name="padding" style=text-align:center>
 
-<br><br>
+<br>
+<br>
 
 <input type="submit" name="submit" value="Verzenden">
 
